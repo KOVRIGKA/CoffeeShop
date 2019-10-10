@@ -18,7 +18,9 @@ for(let i = 0; i < button.length-1; i++){
 function Block(type){
     document.querySelector('.pay').disabled = false;
     if (type === 'simple'){
-        document.querySelectorAll('button[data-type=author]').disabled = true;
+        document.querySelectorAll('button[data-type=author]').forEach(function(item){
+            item.disabled = true;
+        })
         document.querySelector('button[data-type=syrup]').disabled = false;
     }
     else if (type === 'author'){
