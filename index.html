@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="order">
+                <h1 class="order__title"></h1>
+                <span class="order__price">Deposit Amount:</span>
+                <div class="progress-bar">
+                    <div class="progress-bar__inner"></div>
+                </div>
+            </div>
+            <div class="discharge">
+                <button class="button cancel">Cancel</button>
+            </div>
+        </header>
+        <main>
+            <ul class="buttons">
+                <li class="button__item">
+                    <button data-type="simple" onclick="Type()" data-title="Espresso" class="button">Espresso</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="simple" data-title="Latte" class="button">Latte</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="simple" data-title="Cappuccino" class="button">Cappuccino</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="author" data-title="Banana latte" class="button">Banana latte</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="author" data-title="Vanilla cappuccino" class="button">Vanilla cappuccino</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="author" data-title="Flat-white" class="button">Flat-white</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="milk" data-title="Milk" class="button">Milk</button>
+                </li>
+                <li class="button__item">
+                    <button data-type="syrup" data-title="Cherry syrup" class="button" disabled>Cherry syrup</button>
+                </li>
+                <li class="button__item">
+                    <button class="button pay" disabled>Payment</button>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
